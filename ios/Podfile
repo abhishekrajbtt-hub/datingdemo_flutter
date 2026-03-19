@@ -29,7 +29,6 @@ flutter_ios_podfile_setup
 use_modular_headers!
 
 target 'Runner' do
-  pod 'gRPC-Core', :modular_headers => true
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
   target 'RunnerTests' do
     inherit! :search_paths
