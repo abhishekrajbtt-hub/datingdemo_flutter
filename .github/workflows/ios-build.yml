@@ -23,13 +23,13 @@ jobs:
       - name: Flutter doctor
         run: flutter doctor -v
 
-      - name: Install Dart/Flutter packages
-        run: flutter pub get
-
       - name: Clean Flutter and iOS pod state
         run: |
           flutter clean
           rm -rf ios/Pods ios/Podfile.lock
+
+      - name: Install Dart/Flutter packages
+        run: flutter pub get
 
       - name: Install CocoaPods dependencies
         run: |
