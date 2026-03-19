@@ -31,7 +31,7 @@ jobs:
           cd ..
 
       - name: Build iOS app without signing
-        run: flutter build ios --no-codesign
+        run: flutter build ios --no-codesign -v
 
       - name: Upload iOS build logs artifact
         if: always()
