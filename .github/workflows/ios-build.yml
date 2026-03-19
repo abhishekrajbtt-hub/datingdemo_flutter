@@ -8,6 +8,8 @@ on:
 jobs:
   build-ios:
     runs-on: macos-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -23,6 +25,11 @@ jobs:
 
       - name: Install Dart/Flutter packages
         run: flutter pub get
+
+      - name: Clean Flutter and iOS pod state
+        run: |
+          flutter clean
+          rm -rf ios/Pods ios/Podfile.lock
 
       - name: Install CocoaPods dependencies
         run: |
