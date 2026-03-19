@@ -39,6 +39,18 @@ jobs:
           pod install --repo-update
           cd ..
 
+      - name: Normalize gRPC modulemap path for Xcode
+        run: |
+          set -e
+          MODULEMAP_SOURCE=$(find ios/Pods -name "gRPC-Core.modulemap" | head -n 1 || true)
+          if [ -z "$MODULEMAP_SOURCE" ]; then
+            echo "gRPC-Core.modulemap not found after pod install"
+            exit 1
+          fi
+          mkdir -p ios/Pods/Headers/Private/grpc
+          cp "$MODULEMAP_SOURCE" ios/Pods/Headers/Private/grpc/gRPC-Core.modulemap
+          echo "gRPC-Core.modulemap normalized at ios/Pods/Headers/Private/grpc/gRPC-Core.modulemap"
+
       - name: Build iOS simulator app (no signing required)
         run: flutter build ios --simulator -v
 
