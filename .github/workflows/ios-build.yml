@@ -37,8 +37,8 @@ jobs:
           pod install --repo-update
           cd ..
 
-      - name: Build iOS app without signing
-        run: flutter build ios --no-codesign -v
+      - name: Build iOS simulator app (no signing required)
+        run: flutter build ios --simulator -v
 
       - name: Upload iOS build logs artifact
         if: always()
