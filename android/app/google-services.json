@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "934564261347",
+    "project_id": "datingdemo-1c652",
+    "storage_bucket": "datingdemo-1c652.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934564261347:android:e84dbf92cfc2c1f66984d6",
+        "android_client_info": {
+          "package_name": "com.abhishek.datingdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934564261347-ferq658lb8urdp2l3r6mihot7dcrjrjb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhishek.datingdemo",
+            "certificate_hash": "a7b78305d9c6ca2f8bc82295538500aa101411e0"
+          }
+        },
+        {
+          "client_id": "934564261347-ejg0vlo7i9jshkleek1ucgq82rk3ucqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu_XijI-vpBy37vN2l0BvtymMaadtqeOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934564261347-ejg0vlo7i9jshkleek1ucgq82rk3ucqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934564261347:android:2d249a5420f1c6f76984d6",
+        "android_client_info": {
+          "package_name": "com.example.datingdemo_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934564261347-ejg0vlo7i9jshkleek1ucgq82rk3ucqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu_XijI-vpBy37vN2l0BvtymMaadtqeOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934564261347-ejg0vlo7i9jshkleek1ucgq82rk3ucqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
